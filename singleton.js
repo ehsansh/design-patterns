@@ -1,3 +1,10 @@
+//The Singleton pattern is like having a special box that holds a unique toy. Whenever you or your
+//friends want to play with that toy, you go to the box and get the same toy every time.
+//The box makes sure that there is only one toy of that kind in the whole world. It's like a special
+//rule that keeps everything organized and prevents many toys from being made. The Singleton pattern
+// helps ensure that there is only one instance (or copy) of something, just like having only one
+//special toy in the whole world
+
 //The Singleton pattern is a creational design pattern that restricts the instantiation of a class to
 //a single object. It ensures that only one instance of the class exists throughout the application
 //and provides a global point of access to it. This pattern is useful in scenarios where you need to
@@ -5,13 +12,6 @@
 //configuration settings. By enforcing a single instance, it helps maintain data consistency, avoids
 //unnecessary duplication, and provides a convenient way to access the instance from different parts of
 //the codebase.
-
-//The Singleton pattern is like having a special box that holds a unique toy. Whenever you or your
-//friends want to play with that toy, you go to the box and get the same toy every time.
-//The box makes sure that there is only one toy of that kind in the whole world. It's like a special
-//rule that keeps everything organized and prevents many toys from being made. The Singleton pattern
-// helps ensure that there is only one instance (or copy) of something, just like having only one
-//special toy in the whole world
 
 //It is useful in scenarios where you need to manage shared resources, maintain global state, or
 //provide a centralized access point for configuration settings. Additionally, the Singleton pattern
