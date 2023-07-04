@@ -12,6 +12,12 @@
 // modifying each subclass. It provides a consistent way to create objects with variations, ensuring
 // a common structure while allowing for customization.
 
+/*
+In software engineering, the template method pattern is a behavioral design pattern that defines the
+ program skeleton of an algorithm in a method, called template method, which defers some steps to 
+ subclasses.
+*/
+
 //The Template Pattern is useful when you have a common structure or algorithm, but you want to allow
 //  flexibility for individual instances to customize certain parts without modifying the main class.
 
