@@ -107,3 +107,33 @@ remoteControl.addCommand(turnOffTVCommand);
 remoteControl.addCommand(turnOffLightCommand);
 
 remoteControl.executeCommands();
+
+// Define some functions to use as commands
+function sayHello() {
+    console.log('Hello!');
+}
+function sayGoodbye() {
+    console.log('Goodbye!');
+}
+
+// Define a Command object that encapsulates a request
+var Command = function (execute) {
+    this.execute = execute;
+};
+
+// Define a concrete Command object that binds together an action and the object wishing to
+//invoke the action
+var HelloCommand = function () {
+    return new Command(sayHello);
+};
+
+// Define a concrete Command object that binds together an action and the object wishing to invoke the action
+var GoodbyeCommand = function () {
+    return new Command(sayGoodbye);
+};
+
+// Use the Command pattern to execute the commands
+var helloCommand = new HelloCommand();
+var goodbyeCommand = new GoodbyeCommand();
+helloCommand.execute(); // Output: "Hello!"
+goodbyeCommand.execute(); // Output: "Goodbye!"
